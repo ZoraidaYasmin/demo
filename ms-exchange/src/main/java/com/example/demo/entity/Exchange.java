@@ -8,20 +8,17 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
-@Document(collection = "schema_buy.buyBootCoin")
+
+@Document(collection = "schema_ex.exchange")
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class BuyBootCoin {
+public class Exchange {
 
     @Id
     private String id;
-    private String walletId;
-    private String customerIdEmisor;
-    private String customerIdReceptor;
-    private BigDecimal monto;
-    private String state;
-
-
+    private String customerId;
+    private BigDecimal montoSoles;
+    private BigDecimal montoBootCoin;
 }
