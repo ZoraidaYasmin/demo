@@ -7,6 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ZoraidaYasmin/repo-demo-proyecto4.git
+          uri: https://github.com/ZoraidaYasmin/demo.git
           search-paths: config-data
           default-label: ${GIT_BRANCH}
