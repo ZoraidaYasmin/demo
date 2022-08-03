@@ -40,6 +40,12 @@ public class BuyBootCoinController {
         log.info("Service call update - buyBootCoin");
         return buyBootCoinService.update(c,id);
     }
+    
+    @PutMapping("/venderBc/{id}/{customerReceptorId}")
+    public Mono<BuyBootCoin> venderBc(@PathVariable String id, @PathVariable String customerReceptorId){
+        log.info("Service call update - buyBootCoin");
+        return buyBootCoinService.venderBc(id, customerReceptorId);
+    }
 
     @DeleteMapping("/delete/{id}")
     public Mono<BuyBootCoin> deleteBuyBootCoin(@PathVariable String id){

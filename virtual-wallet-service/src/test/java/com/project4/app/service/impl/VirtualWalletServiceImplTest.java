@@ -38,7 +38,7 @@ public class VirtualWalletServiceImplTest {
                 .amount(BigDecimal.valueOf(100))
                 .cardNumberEmisor("3636546454756756")
                 .cardNumberReceptor("0")
-                .virtualWalletId(1)
+                //.virtualWalletId(1)
                 .build();
     }
 

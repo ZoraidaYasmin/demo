@@ -25,5 +25,5 @@ public class VirtualWallet {
 	private BigDecimal amount;
 	private String cardNumberEmisor;
 	private String cardNumberReceptor;
-	private Integer virtualWalletId;
+	// customerid
 }

@@ -49,7 +49,7 @@ public class VirtualWalletControllerTest {
                 .amount(BigDecimal.valueOf(100))
                 .cardNumberEmisor("3636546454756756")
                 .cardNumberReceptor("0")
-                .virtualWalletId(1)
+                //.virtualWalletId(1)
                 .build();
 
         Mockito.when(virtualWalletService.findAll()).thenReturn(Flux.just(virtualWallet));
@@ -76,7 +76,7 @@ public class VirtualWalletControllerTest {
                 .amount(BigDecimal.valueOf(100))
                 .cardNumberEmisor("3636546454756756")
                 .cardNumberReceptor("0")
-                .virtualWalletId(1)
+                //.virtualWalletId(1)
                 .build();
 
         Mockito.when(virtualWalletService.findById("6562626656565656")).thenReturn(Mono.just(virtualWallet));
@@ -110,7 +110,7 @@ public class VirtualWalletControllerTest {
                 .amount(BigDecimal.valueOf(100))
                 .cardNumberEmisor("3636546454756756")
                 .cardNumberReceptor("0")
-                .virtualWalletId(1)
+                //.virtualWalletId(1)
                 .build();
 
         String id = "6767668789fds9";
@@ -136,7 +136,7 @@ public class VirtualWalletControllerTest {
                 .amount(BigDecimal.valueOf(100))
                 .cardNumberEmisor("3636546454756756")
                 .cardNumberReceptor("0")
-                .virtualWalletId(1)
+                //.virtualWalletId(1)
                 .build();
         String id = "6767668789fds9";
 
@@ -163,7 +163,7 @@ public class VirtualWalletControllerTest {
                 .amount(BigDecimal.valueOf(100))
                 .cardNumberEmisor("3636546454756756")
                 .cardNumberReceptor("0")
-                .virtualWalletId(1)
+                //.virtualWalletId(1)
                 .build();
 
         Mockito.when(virtualWalletService.create(virtualWallet)).thenReturn(Mono.just(virtualWallet));

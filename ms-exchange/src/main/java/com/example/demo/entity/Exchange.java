@@ -21,4 +21,5 @@ public class Exchange {
     private String customerId;
     private BigDecimal montoSoles;
     private BigDecimal montoBootCoin;
+    private BigDecimal tazaCambio;
 }
