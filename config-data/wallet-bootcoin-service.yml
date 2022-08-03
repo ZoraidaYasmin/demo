@@ -16,16 +16,6 @@ spring:
       #host: localhost
       #port: 27017
       #database: bdproyecto1
-  kafka:
-    template:
-        default-topic: wallet-bootcoin-events
-    producer:
-        bootstrap-servers: localhost:9092, localhost:9093, localhost:9094
-        key-serializer: org.apache.kafka.common.serialization.StringSerializer
-        value-serializer: org.apache.kafka.common.serialization.StringSerializer
-    admin:
-      properties:
-        bootstrap.servers: localhost:9092, localhost:9093, localhost:9094
 eureka:
   client:
     enabled: true
